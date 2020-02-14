@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+<body>
+<script>
+function displaydate()
+{
+ var d = new Date();
+var date = d.getDate();
+var month = d.getMonth();
+month++;
+var year = d.getFullYear();
+document.getElementById('display').value = date+"/"+month+"/"+year;
+}
+</script>
+<form>
+<input type="text" id="display" /><br>
+<input type="button" onclick="displaydate()" value="display date" /><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+<script>
+function sumofnum()
+{
+alert("give numbers one by one");
+  var continueget = true;
+	var sum=0;  
+while(continueget)
+{
+   var x = Number(prompt("Enter any positive number"));
+   sum +=x;
+   continueget = confirm("Add another number");
+
+}
+alert("The some of the numbers is "+sum);
+}
+</script>
+</head>
+<body>
+<input type="button" value="cal sumofnumbers" onclick="sumofnum()" />
+</body>
+</html>

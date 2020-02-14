@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+<script>
+function fact(n){
+
+	if(n==0)
+	{ 
+		return 1;
+	}
+	else{
+		return n*fact(n-1);
+
+}
+}
+</script>
+</head>
+<body>
+<script>
+ var x = prompt("enter a value to calculate factorial");
+ var ans = fact(x);
+ alert("the factorial of "+x+" is "+ans);
+</script>
+</body>
+</html>

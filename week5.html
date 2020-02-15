@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            week 5
+        </title>
+    </head>
+    <body>
+        <form action="">
+            <h1>Select a country to display its state</h1>
+            <select name="country" id="box" onclick="check()">
+            <option value="NEW DELHI">India</option>
+            <option value="LONDON">United kingdom</option>
+            <option value="WASHINGTON DC">America</option>
+            <option value="CANBERRA">Australia</option>
+            </select>
+            <br>
+            <br>
+            <input type="text" id="display" />
+        </form>
+        <script>
+            function check()
+            {
+                var x = document.getElementById('box').value;
+                document.getElementById('display').value = x;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            fibonacci series using javascript
+        </title>
+        <script>
+            function fib()
+            {
+                var x = Number(prompt("Enter any positive number :"))
+                var f0=0,f1=1,f,result = 0+"\t";
+                while(x >=0 )
+                {
+                    if(f0!=0)
+                    result += f0 + " \t";
+                    console.log(f0);
+                    f = f0 + f1;
+                    f0 = f1;
+                    f1 = f;
+                    x--;
+                
+                }
+                alert(result);
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            fib()
+        </script>
+    </body>
+</html>
